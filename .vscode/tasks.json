@@ -1,0 +1,37 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "tasks": [
+    {
+      // Build task, Ctrl+Shift+B
+      "taskName": "build",
+      "args": ["run", "build"]
+    },
+    {
+      "taskName": "build:watch",
+      "args": ["run", "build:watch"]
+    },
+    {
+      "taskName": "update",
+      "args": ["update"]
+    },
+    {
+      "taskName": "lint",
+      "args": ["run", "lint"]
+    },
+    {
+      "taskName": "lint:watch",
+      "args": ["run", "lint:watch"]
+    },
+    {
+      // Test task, Ctrl+Shift+T
+      "taskName": "test",
+      "args": ["run", "test"]
+    }
+  ]
+}
